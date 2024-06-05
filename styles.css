@@ -1,0 +1,95 @@
+/* Basic styling for the body */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the navigation bar */
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#navbar ul li {
+    margin: 0 20px;
+}
+
+#navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+/* Hover effect for the menu items */
+#navbar ul li a:hover {
+    color: #ff6347;
+    transform: scale(1.1);
+}
+
+/* Change background color and add shadow to navbar when scrolled */
+.scrolled {
+    background-color: #222;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Adding some content to allow scrolling */
+.content {
+    padding-top: 70px; /* Height of the navbar to offset content */
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.content section {
+    padding: 100px 20px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+.content img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.content a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.content a:hover {
+    background-color: #ff6347;
+    transform: scale(1.1);
+}
